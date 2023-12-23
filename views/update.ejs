@@ -1,0 +1,10 @@
+<%- include("partials/header") %>
+<%- include("partials/nav") %>
+<form class="w-25 mt-5 m-auto" style="background-color:  rgba(196,198,197,255);" action="/update/<%= task._id %>" method="post">
+  <h1>Update-medicine</h1>
+  <input class="form-control mb-3" type="text" value="<%= task.task_no %>" name="task_no" placeholder="Task_no">
+  <input class="form-control mb-3" type="date" value="<%= task.date %>" name="date">
+  <textarea class="form-control mb-3" name="work" placeholder="Write your task here..."><%= task.work %></textarea>
+  <button class="btn btn-primary">Update</button>
+</form>
+<%- include("partials/footer") %>

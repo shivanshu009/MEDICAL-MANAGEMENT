@@ -1,0 +1,11 @@
+<%- include("partials/header") %>
+<%- include("partials/nav") %>
+<form class="w-25 mt-5 m-auto  p-4" style="  background-color: rgba(196,198,197,255);" action="/signin" method="post">
+  <h1>Log in to medical management</h1>
+  <input class="form-control mb-3 " style="height: 60px;" type="text" name="username" placeholder="Username">
+  <input class="form-control mb-3" " style="height: 60px;" type="password" name="password" placeholder="********">
+  <button style="font-size: x-large;" class="btn btn-primary">Sign-In</button>
+  <p>Don't have an account? <br>
+    <a href="/getmail">Forget-password ?</a></p>
+</form>
+<%- include("partials/footer") %>

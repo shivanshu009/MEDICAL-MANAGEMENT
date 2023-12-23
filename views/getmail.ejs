@@ -1,0 +1,8 @@
+<%- include("partials/header") %>
+<%- include("partials/nav") %>
+<form class="w-25 mt-5 m-auto bg-light p-4" action="/getmail" method="post">
+  <h1>Forget-password.</h1>
+  <input class="form-control mb-3" type="text" name="email" placeholder="example@gmail.com">
+  <button class="btn btn-primary">Send-Mail</button>
+</form>
+<%- include("partials/footer") %>
